@@ -21,9 +21,15 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import logo from "./assets/logo.png";
+import equipoImg from './assets/equipo.jpg';
+import innovacionImg from './assets/innovacion.jpg';
+import LegalModal from './components/ui/LegalModal'; // o './components/LegalModal' si lo dejaste en otra carpeta
+import { useState } from 'react';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [modalType, setModalType] = useState<string | null>(null);
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -39,70 +45,64 @@ export default function App() {
               <p className="text-xs font-medium" style={{ color: '#1C2942', opacity: 0.7 }}>IT & HR Solutions</p>
             </div>
           </div>
-          <nav className="hidden md:flex items-center space-x-1">
-            <a 
-              href="#features" 
-              className="relative px-4 py-2 transition-all duration-300 rounded-lg group"
-              style={{ color: '#1C2942' }}
-              onMouseEnter={(e) => e.target.style.color = '#00A4D6'}
-              onMouseLeave={(e) => e.target.style.color = '#1C2942'}
-            >
-              <span className="relative z-10">Características</span>
-              <div 
-                className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ backgroundColor: '#F5F5F5' }}
-              ></div>
-            </a>
-            <a 
-              href="#how-it-works" 
-              className="relative px-4 py-2 transition-all duration-300 rounded-lg group"
-              style={{ color: '#1C2942' }}
-              onMouseEnter={(e) => e.target.style.color = '#00A4D6'}
-              onMouseLeave={(e) => e.target.style.color = '#1C2942'}
-            >
-              <span className="relative z-10">Cómo funciona</span>
-              <div 
-                className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ backgroundColor: '#F5F5F5' }}
-              ></div>
-            </a>
-            <a 
-              href="#advantages" 
-              className="relative px-4 py-2 transition-all duration-300 rounded-lg group"
-              style={{ color: '#1C2942' }}
-              onMouseEnter={(e) => e.target.style.color = '#00A4D6'}
-              onMouseLeave={(e) => e.target.style.color = '#1C2942'}
-            >
-              <span className="relative z-10">Ventajas</span>
-              <div 
-                className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ backgroundColor: '#F5F5F5' }}
-              ></div>
-            </a>
-            <div className="ml-4 pl-4 border-l" style={{ borderColor: 'rgba(28, 41, 66, 0.2)' }}>
-           <Button 
-                variant="outline" 
-                className="transition-all duration-300 shadow-sm hover:shadow-md"
-                style={{ 
-                  borderColor: '#00A4D6', 
-                  color: '#00A4D6',
-                '--tw-ring-color': '#00A4D6'
-                }}
-                onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#F5F5F5';
-                }}
-                onMouseLeave={(e) => {
-                e.target.style.backgroundColor = 'transparent';
-                }}
-                onClick={() => {
-                const el = document.getElementById("footer");
-              if (el) el.scrollIntoView({ behavior: "smooth" });
-              }}
-          >
-          Contacto
-          </Button>
-            </div>
-          </nav>
+          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-[#1C2942]">
+  <a 
+    href="#features" 
+    className="relative px-3 py-2 transition-all duration-300 rounded-lg group"
+  >
+    <span className="relative z-10 group-hover:text-[#00A4D6] transition-colors duration-300">Características</span>
+    <div 
+      className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      style={{ backgroundColor: '#F5F5F5' }}
+    ></div>
+  </a>
+
+  <a 
+    href="#how-it-works" 
+    className="relative px-3 py-2 transition-all duration-300 rounded-lg group"
+  >
+    <span className="relative z-10 group-hover:text-[#00A4D6] transition-colors duration-300">Cómo funciona</span>
+    <div 
+      className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      style={{ backgroundColor: '#F5F5F5' }}
+    ></div>
+  </a>
+
+  <a 
+    href="#advantages" 
+    className="relative px-3 py-2 transition-all duration-300 rounded-lg group"
+  >
+    <span className="relative z-10 group-hover:text-[#00A4D6] transition-colors duration-300">Ventajas</span>
+    <div 
+      className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      style={{ backgroundColor: '#F5F5F5' }}
+    ></div>
+  </a>
+
+  <div className="ml-4 pl-4 border-l" style={{ borderColor: 'rgba(28, 41, 66, 0.2)' }}>
+    <Button 
+      variant="outline" 
+      className="transition-all duration-300 shadow-sm hover:shadow-md"
+      style={{ 
+        borderColor: '#00A4D6', 
+        color: '#00A4D6',
+        '--tw-ring-color': '#00A4D6'
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = '#F5F5F5';
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = 'transparent';
+      }}
+      onClick={() => {
+        const el = document.getElementById("footer");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }}
+    >
+      Contacto
+    </Button>
+  </div>
+</nav>
 
           {/* Mobile Menu Button */}
           <button
@@ -204,7 +204,7 @@ export default function App() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight" style={{ color: '#1C2942' }}>
-                  Transformando la gestión de personas con{" "}
+                  Potenciando la gestión de personas con{" "}
                   <span style={{ color: '#00A4D6' }}>soluciones digitales</span>
                 </h1>
                 <p className="text-xl leading-relaxed" style={{ color: '#1C2942', opacity: 0.8 }}>
@@ -246,11 +246,24 @@ export default function App() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-3xl p-8 flex items-center justify-center" style={{ backgroundColor: 'rgba(0, 164, 214, 0.1)' }}>
+
+                {/* Imagen externa original - reemplazada por imagen local */}
+                {/*
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop&crop=center"
                   alt="Equipo trabajando con tecnología"
                   className="w-full h-full object-cover rounded-2xl"
                 />
+                 />
+              */}
+
+             <ImageWithFallback
+                src={equipoImg}
+                alt="Equipo trabajando con tecnología"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+
+             
               </div>
               <div 
                 className="absolute -top-4 -right-4 w-20 h-20 rounded-full flex items-center justify-center shadow-lg"
@@ -359,9 +372,9 @@ export default function App() {
                 >
                   <CheckCircle className="w-8 h-8" style={{ color: '#00A4D6' }} />
                 </div>
-                <h3 className="text-xl font-semibold" style={{ color: '#1C2942' }}>Reducción de tareas operativas</h3>
+                <h3 className="text-xl font-semibold" style={{ color: '#1C2942' }}> Talento enfocado</h3>
                 <p style={{ color: '#1C2942', opacity: 0.8 }}>
-                  Libera tiempo valioso para enfocarte en la estrategia y el capital humano
+                  Más tiempo, autonomía y dedicación en lo que realmente importa
                 </p>
               </CardContent>
             </Card>
@@ -378,7 +391,7 @@ export default function App() {
         ¿Cómo funciona?
       </h2>
       <p className="text-xl" style={{ color: '#1C2942', opacity: 0.8 }}>
-        Descubrí cómo podés transformar tu gestión de RRHH desde el primer día
+        Descubrí cómo podés transformar tu gestión de personas desde el primer día
       </p>
     </div>
 
@@ -388,7 +401,7 @@ export default function App() {
         <div className="bg-white p-6 rounded-lg shadow-md text-center">
           <h4 className="text-xl font-bold mb-2 text-[#00A4D6]">🖥️ Local</h4>
           <p className="text-gray-700 mb-2">Instalación en servidores del cliente. Operación interna sin almacenamiento en la nube.</p>
-          <p className="text-sm text-gray-500">🔗 <strong>Puente SaaS:</strong> Servicios como firma digital, bot IA o validaciones automáticas pueden operar desde nuestra nube si el cliente lo autoriza.</p>
+          <p className="text-sm text-gray-500">🔗 <strong>Puente SaaS:</strong> Servicios que necesitan feedback pueden operar desde nuestra nube sin almacenar información</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-md text-center">
           <h4 className="text-xl font-bold mb-2 text-[#00A4D6]">☁️ Autogestionado</h4>
@@ -425,7 +438,7 @@ export default function App() {
             <span className="text-2xl font-bold text-white">3</span>
           </div>
           <h4 className="text-xl font-semibold" style={{ color: '#1C2942' }}>Automatizá y optimizá tu gestión</h4>
-          <p className="text-gray-700">Activamos funciones avanzadas: IA, alertas inteligentes, seguimiento de procesos, y un bot que responde 24/7.</p>
+          <p className="text-gray-700">Activamos funciones avanzadas: IA, alertas inteligentes, seguimiento de procesos, y un bot que responde en todo momento.</p>
         </div>
       </div>
     </div>
@@ -451,9 +464,9 @@ export default function App() {
                     <CheckCircle className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold" style={{ color: '#1C2942' }}>Diseñado por expertos en RRHH</h3>
+                    <h3 className="text-lg font-semibold" style={{ color: '#1C2942' }}>Diseñado por expertos en talento y transformación digital</h3>
                     <p style={{ color: '#1C2942', opacity: 0.8 }}>
-                      Desarrollado por profesionales con años de experiencia en gestión del capital humano
+                      Desarrollado por un equipo de profesionales con años de experiencia acompañando procesos humanos en organizaciones
                     </p>
                   </div>
                 </div>
@@ -492,10 +505,19 @@ export default function App() {
 
             <div className="relative">
               <div className="aspect-square rounded-3xl p-8 flex items-center justify-center" style={{ backgroundColor: 'rgba(0, 164, 214, 0.1)' }}>
+                {/*
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=600&fit=crop&crop=center"
                   alt="Tecnología e innovación en RRHH"
                   className="w-full h-full object-cover rounded-2xl"
+
+
+                />
+                */}
+                <ImageWithFallback
+                    src={innovacionImg}
+                    alt="Tecnología e innovación en RRHH"
+                    className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
             </div>
@@ -511,7 +533,7 @@ export default function App() {
               Listo para modernizar tu gestión del capital humano
             </h2>
             <p className="text-xl text-white opacity-90">
-              Únete a las empresas que ya transformaron su RRHH con nuestra tecnología
+             Únete a quienes ya impulsan su talento con soluciones inteligentes
             </p>
             <Button 
   size="lg" 
@@ -559,14 +581,18 @@ export default function App() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-semibold">Contacto</h4>
-              <div className="space-y-2">
-                <div className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4 text-white opacity-70" />
-                  <span className="text-white opacity-70">info@e-rrhh.com.ar</span>
-                </div>
-              </div>
-            </div>
+  <h4 className="font-semibold">Contacto</h4>
+  <div className="space-y-2">
+    <a 
+      href="mailto:info@e-rrhh.com.ar" 
+      className="flex items-center space-x-2 text-white opacity-70 hover:opacity-100 transition-opacity"
+    >
+      <Mail className="w-5 h-5" />
+      <span>info@e-rrhh.com.ar</span>
+    </a>
+  </div>
+</div>
+
 
             <div className="space-y-4">
               <h4 className="font-semibold">Síguenos</h4>
@@ -580,15 +606,9 @@ export default function App() {
             <div className="space-y-4">
               <h4 className="font-semibold">Legal</h4>
               <div className="space-y-2">
-                <a href="#" className="text-white opacity-70 hover:opacity-100 transition-opacity block">
-                  Aviso Legal
-                </a>
-                <a href="#" className="text-white opacity-70 hover:opacity-100 transition-opacity block">
-                  Política de Privacidad
-                </a>
-                <a href="#" className="text-white opacity-70 hover:opacity-100 transition-opacity block">
-                  Términos de Uso
-                </a>
+                  <button onClick={() => setModalType("legal")} className="text-white opacity-70 hover:opacity-100 transition-opacity block text-left">Aviso Legal</button>
+                  <button onClick={() => setModalType("privacy")} className="text-white opacity-70 hover:opacity-100 transition-opacity block text-left">Política de Privacidad</button>
+                  <button onClick={() => setModalType("terms")} className="text-white opacity-70 hover:opacity-100 transition-opacity block text-left">Términos de Uso</button>
               </div>
             </div>
           </div>
@@ -597,6 +617,8 @@ export default function App() {
             <p>&copy; 2025 E-RRHH | IT & HR Solutions. Todos los derechos reservados.</p>
           </div>
         </div>
+        {modalType && <LegalModal type={modalType} onClose={() => setModalType(null)} />}
+
       </footer>
     
       {/* WhatsApp Floating Button */}
