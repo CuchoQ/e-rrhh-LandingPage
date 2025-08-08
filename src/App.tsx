@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-    <header className="border-b border-gray-100 bg-white/90 backdrop-blur-xl sticky top-0  shadow-lg shadow-gray-900/5 ">
+    <header className="border-b border-gray-100 bg-white/90 backdrop-blur-xl sticky top-0 z-50 shadow-lg shadow-gray-900/5">
         <div className="container mx-auto px-5 py-3 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="relative">
