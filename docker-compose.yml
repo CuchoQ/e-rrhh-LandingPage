@@ -1,0 +1,20 @@
+# Stack para Portainer: misma red que Nginx Proxy Manager (proxy-net).
+#
+# Imagen: publicada por .github/workflows/deploy.yml a GHCR (debe coincidir con el repo).
+# NPM: Proxy Host → esquema http, Forward hostname = nombre del servicio abajo (web),
+#      Forward port = 80. Dominio: e-rrhh.com.ar (SSL en NPM).
+#
+# Portainer (repo privado en GHCR): Registries → ghcr.io con PAT read:packages.
+# Webhook del stack → secret GitHub PORTAINER_WEBHOOK_URL para redeploy automático.
+
+services:
+  web:
+    image: ghcr.io/cuchoq/e-rrhh-landingpage:latest
+    pull_policy: always
+    restart: unless-stopped
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:
+    external: true
