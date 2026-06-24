@@ -1,0 +1,166 @@
+{
+  "header": {
+    "subtitle": "IT & HR Solutions",
+    "nav_solutions": "Solutions",
+    "nav_hr": "Consulting",
+    "nav_digital": "Technology",
+    "nav_why_us": "About Us",
+    "nav_contact": "Contact"
+  },
+  "hero": {
+    "title": "We empower people management with experience and technology",
+    "subtitle": "Specialized consulting, digital solutions, and more than 25 years of experience to professionalize and transform Human Resources management in your company.",
+    "btn_services": "Discover our services",
+    "btn_meeting": "Request a meeting",
+    "img_alt": "Team working with technology"
+  },
+  "features": {
+    "title": "Comprehensive solutions for people management",
+    "subtitle": "We combine professional experience and technology to support each company according to its needs.",
+    "items": {
+      "consulting": {
+        "title": "Human Resources Consulting",
+        "desc": "Specialized advice to professionalize processes, resolve labor issues, and improve people management."
+      },
+      "digital": {
+        "title": "Digital Solutions",
+        "desc": "Technological tools designed to automate processes, centralize information, and facilitate decision-making."
+      }
+    }
+  },
+  "hr_consulting": {
+    "title": "Human Resources Consulting",
+    "subtitle": "We accompany organizations in diagnosing, planning, and implementing strategies to professionalize people management.",
+    "items": {
+      "diagnosis": {
+        "title": "Organizational diagnosis",
+        "desc": "Comprehensive analysis of processes, structure, culture, climate, competencies, and management needs."
+      },
+      "planning": {
+        "title": "Strategic Human Resources planning",
+        "desc": "Definition of objectives, policies, indicators, and action plans aligned with the company's strategy."
+      },
+      "development": {
+        "title": "Organizational development",
+        "desc": "Training, performance, leadership, motivation, internal communication, and team development."
+      },
+      "processes": {
+        "title": "Processes and continuous improvement",
+        "desc": "Design, documentation, and optimization of processes, profiles, procedures, and systems linked to quality standards."
+      }
+    }
+  },
+  "how_it_works": {
+    "title": "How does it work?",
+    "subtitle": "Discover how you can transform your people management from day one",
+    "deployment_title": "Deployment Models",
+    "deployment": {
+      "local": {
+        "title": "🖥️ Local",
+        "desc": "Installation on client servers. Internal operation without cloud storage.",
+        "note": "🔗 SaaS Bridge: Services requiring feedback can operate from our cloud without storing information"
+      },
+      "self_hosted": {
+        "title": "☁️ Self-Hosted",
+        "desc": "Cloud installation under client control. Roles and users managed internally.",
+        "note": "All services run in the cloud."
+      },
+      "saas": {
+        "title": "🌐 Public SaaS",
+        "desc": "Immediate access in a shared model. We take care of maintenance.",
+        "note": "All services are available from the start, without additional configuration."
+      }
+    },
+    "implementation_title": "Implementation and Setup",
+    "implementation": {
+      "step1": {
+        "title": "Connect your company",
+        "desc": "We handle the implementation, data migration, and integration with your current systems. We are with you from the start."
+      },
+      "step2": {
+        "title": "Transform people management",
+        "desc": "Turn complex processes into simple solutions adapted to your company's reality. Centralize everything and manage with agility."
+      },
+      "step3": {
+        "title": "Automate and optimize your management",
+        "desc": "We activate advanced features: AI, smart alerts, process tracking, and a bot that responds at all times."
+      }
+    }
+  },
+  "digital_solutions": {
+    "title": "Digital Solutions",
+    "subtitle": "We develop technological tools to centralize, automate, and improve people management at every stage of the employee lifecycle.",
+    "platform": {
+      "title": "Comprehensive management platform",
+      "items": [
+        "Automation of processes and repetitive tasks.",
+        "Centralization and traceability of information.",
+        "Dashboards and indicators for decision making.",
+        "Artificial intelligence applied to key processes.",
+        "Access from any device.",
+        "Integration of all Human Resources processes."
+      ]
+    },
+    "deployment": {
+      "title": "Deployment Models",
+      "items": {
+        "local": {
+          "title": "Local",
+          "desc": "Installation on company servers, without external information storage."
+        },
+        "self_hosted": {
+          "title": "Self-Hosted",
+          "desc": "Implementation in a cloud managed by the client."
+        },
+        "saas": {
+          "title": "Public SaaS",
+          "desc": "Immediate access to the platform, with maintenance and updates handled by E-RRHH."
+        }
+      }
+    },
+    "implementation": {
+      "title": "Implementation and support",
+      "desc": "We handle the configuration, data migration, process adaptation, training, and launch of the solution."
+    }
+  },
+  "why_choose_us": {
+    "title": "Why choose us?",
+    "items": {
+      "experience": {
+        "title": "Applied experience to business reality",
+        "desc": "More than 25 years accompanying labor, organizational, and people management processes."
+      },
+      "vision": {
+        "title": "Strategic and comprehensive vision",
+        "desc": "We integrate diagnosis, planning, organizational development, processes, and technology in a single proposal."
+      },
+      "adapted": {
+        "title": "Solutions adapted to each organization",
+        "desc": "We design concrete responses according to the reality, structure, and needs of each company."
+      },
+      "technology": {
+        "title": "Technology with professional criteria",
+        "desc": "We incorporate digital tools to automate processes, analyze information, and improve decision-making. We use artificial intelligence in specific functions when it brings greater agility, accuracy, and analysis capacity."
+      },
+      "support": {
+        "title": "Support throughout the process",
+        "desc": "We work from diagnosis and planning to implementation, monitoring, and continuous improvement."
+      }
+    }
+  },
+  "final_cta": {
+    "title": "Ready to modernize your human capital management",
+    "subtitle": "Join those who already boost their talent with smart solutions",
+    "btn_start": "Start today"
+  },
+  "footer": {
+    "slogan": "Transforming people management with digital solutions",
+    "contact": "Contact",
+    "follow": "Follow us",
+    "legal": "Legal",
+    "legal_notice": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "© 2025 E-RRHH | IT & HR Solutions. All rights reserved."
+  }
+}

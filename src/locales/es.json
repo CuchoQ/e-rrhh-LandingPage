@@ -1,0 +1,166 @@
+{
+  "header": {
+    "subtitle": "IT & HR Solutions",
+    "nav_solutions": "Soluciones",
+    "nav_hr": "Consultoría",
+    "nav_digital": "Tecnología",
+    "nav_why_us": "Nosotros",
+    "nav_contact": "Contacto"
+  },
+  "hero": {
+    "title": "Potenciamos la gestión de personas con experiencia y tecnología",
+    "subtitle": "Consultoría especializada, soluciones digitales y más de 25 años de experiencia para profesionalizar y transformar la gestión de Recursos Humanos de tu empresa.",
+    "btn_services": "Conocer nuestros servicios",
+    "btn_meeting": "Solicitar una reunión",
+    "img_alt": "Equipo trabajando con tecnología"
+  },
+  "features": {
+    "title": "Soluciones integrales para la gestión de personas",
+    "subtitle": "Combinamos experiencia profesional y tecnología para acompañar a cada empresa según sus necesidades.",
+    "items": {
+      "consulting": {
+        "title": "Consultoría en Recursos Humanos",
+        "desc": "Asesoramiento especializado para profesionalizar procesos, resolver problemáticas laborales y mejorar la gestión de personas."
+      },
+      "digital": {
+        "title": "Soluciones digitales",
+        "desc": "Herramientas tecnológicas diseñadas para automatizar procesos, centralizar información y facilitar la toma de decisiones."
+      }
+    }
+  },
+  "hr_consulting": {
+    "title": "Consultoría en Recursos Humanos",
+    "subtitle": "Acompañamos a las organizaciones en el diagnóstico, planificación e implementación de estrategias para profesionalizar la gestión de personas.",
+    "items": {
+      "diagnosis": {
+        "title": "Diagnóstico organizacional",
+        "desc": "Análisis integral de procesos, estructura, cultura, clima, competencias y necesidades de gestión."
+      },
+      "planning": {
+        "title": "Planificación estratégica de Recursos Humanos",
+        "desc": "Definición de objetivos, políticas, indicadores y planes de acción alineados con la estrategia de la empresa."
+      },
+      "development": {
+        "title": "Desarrollo organizacional",
+        "desc": "Capacitación, desempeño, liderazgo, motivación, comunicación interna y desarrollo de equipos."
+      },
+      "processes": {
+        "title": "Procesos y mejora continua",
+        "desc": "Diseño, documentación y optimización de procesos, perfiles, procedimientos y sistemas vinculados con normas de calidad."
+      }
+    }
+  },
+  "how_it_works": {
+    "title": "¿Cómo funciona?",
+    "subtitle": "Descubrí cómo podés transformar tu gestión de personas desde el primer día",
+    "deployment_title": "Modelos de Despliegue",
+    "deployment": {
+      "local": {
+        "title": "🖥️ Local",
+        "desc": "Instalación en servidores del cliente. Operación interna sin almacenamiento en la nube.",
+        "note": "🔗 Puente SaaS: Servicios que necesitan feedback pueden operar desde nuestra nube sin almacenar información"
+      },
+      "self_hosted": {
+        "title": "☁️ Autogestionado",
+        "desc": "Instalación en la nube bajo control del cliente. Roles y usuarios gestionados internamente.",
+        "note": "Todos los servicios se ejecutan en la nube."
+      },
+      "saas": {
+        "title": "🌐 SaaS Público",
+        "desc": "Acceso inmediato en modalidad compartida. Nosotros nos encargamos del mantenimiento.",
+        "note": "Todos los servicios están disponibles desde el inicio, sin configuración adicional."
+      }
+    },
+    "implementation_title": "Implementación y Puesta en Marcha",
+    "implementation": {
+      "step1": {
+        "title": "Conectá tu empresa",
+        "desc": "Nos encargamos de la implementación, la migración de datos y la integración con tus sistemas actuales. Te acompañamos desde el inicio."
+      },
+      "step2": {
+        "title": "Transformá la gestión de personas",
+        "desc": "Convertí procesos complejos en soluciones simples, adaptadas a la realidad de tu empresa. Centralizá todo y gestioná con agilidad."
+      },
+      "step3": {
+        "title": "Automatizá y optimizá tu gestión",
+        "desc": "Activamos funciones avanzadas: IA, alertas inteligentes, seguimiento de procesos, y un bot que responde en todo momento."
+      }
+    }
+  },
+  "digital_solutions": {
+    "title": "Soluciones digitales",
+    "subtitle": "Desarrollamos herramientas tecnológicas para centralizar, automatizar y mejorar la gestión de personas en cada etapa del ciclo laboral.",
+    "platform": {
+      "title": "Plataforma integral de gestión",
+      "items": [
+        "Automatización de procesos y tareas repetitivas.",
+        "Centralización y trazabilidad de la información.",
+        "Dashboards e indicadores para la toma de decisiones.",
+        "Inteligencia artificial aplicada a procesos clave.",
+        "Acceso desde cualquier dispositivo.",
+        "Integración de todos los procesos de Recursos Humanos."
+      ]
+    },
+    "deployment": {
+      "title": "Modelos de despliegue",
+      "items": {
+        "local": {
+          "title": "Local",
+          "desc": "Instalación en servidores de la empresa, sin almacenamiento externo de información."
+        },
+        "self_hosted": {
+          "title": "Autogestionado",
+          "desc": "Implementación en una nube administrada por el cliente."
+        },
+        "saas": {
+          "title": "SaaS Público",
+          "desc": "Acceso inmediato a la plataforma, con mantenimiento y actualizaciones a cargo de E-RRHH."
+        }
+      }
+    },
+    "implementation": {
+      "title": "Implementación y acompañamiento",
+      "desc": "Nos encargamos de la configuración, migración de datos, adaptación de procesos, capacitación y puesta en marcha de la solución."
+    }
+  },
+  "why_choose_us": {
+    "title": "¿Por qué elegirnos?",
+    "items": {
+      "experience": {
+        "title": "Experiencia aplicada a la realidad empresarial",
+        "desc": "Más de 25 años acompañando procesos laborales, organizacionales y de gestión de personas."
+      },
+      "vision": {
+        "title": "Visión estratégica e integral",
+        "desc": "Integramos diagnóstico, planificación, desarrollo organizacional, procesos y tecnología en una misma propuesta."
+      },
+      "adapted": {
+        "title": "Soluciones adaptadas a cada organización",
+        "desc": "Diseñamos respuestas concretas según la realidad, estructura y necesidades de cada empresa."
+      },
+      "technology": {
+        "title": "Tecnología con criterio profesional",
+        "desc": "Incorporamos herramientas digitales para automatizar procesos, analizar información y mejorar la toma de decisiones. Utilizamos inteligencia artificial en funciones específicas, cuando aporta mayor agilidad, precisión y capacidad de análisis."
+      },
+      "support": {
+        "title": "Acompañamiento en todo el proceso",
+        "desc": "Trabajamos desde el diagnóstico y la planificación hasta la implementación, el seguimiento y la mejora continua."
+      }
+    }
+  },
+  "final_cta": {
+    "title": "Listo para modernizar tu gestión del capital humano",
+    "subtitle": "Únete a quienes ya impulsan su talento con soluciones inteligentes",
+    "btn_start": "Empezá hoy"
+  },
+  "footer": {
+    "slogan": "Transformando la gestión de personas con soluciones digitales",
+    "contact": "Contacto",
+    "follow": "Síguenos",
+    "legal": "Legal",
+    "legal_notice": "Aviso Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso",
+    "rights": "© 2025 E-RRHH | IT & HR Solutions. Todos los derechos reservados."
+  }
+}
