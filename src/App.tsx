@@ -55,12 +55,12 @@ function Hero() {
       <main className="container hero-content">
         <div className="copy">
           <h1>
-            Recursos Humanos
+            Gestion de Personas
             <span>+ Tecnología</span>
           </h1>
 
           <p className="lead">
-            Transformamos la gestión de personas combinando experiencia en recursos humanos, tecnología e inteligencia artificial.
+            Transformamos la gestión de personas combinando experiencia, tecnología e inteligencia artificial.
           </p>
 
           <p className="description">
@@ -209,7 +209,7 @@ function HrSolutions() {
           </div>
           <div>
             <p className="section-copy" style={{ margin: 0 }}>
-              Intervenimos sobre los procesos de Recursos Humanos de manera integral o específica, de acuerdo con la realidad y las necesidades de cada organización.
+              Intervenimos sobre los procesos de gestión de personas de manera integral o específica, de acuerdo con la realidad y las necesidades de cada organización.
             </p>
           </div>
         </div>
@@ -295,7 +295,7 @@ function Technology() {
           </div>
           <div>
             <p className="section-copy" style={{ margin: 0 }}>
-              Nuestro equipo IT nos permite diseñar e implementar soluciones tecnológicas vinculadas directamente con las necesidades de Recursos Humanos y de la organización.
+              Nuestro equipo IT nos permite diseñar e implementar soluciones tecnológicas vinculadas directamente con las necesidades de gestion de personas y de la organización.
             </p>
           </div>
         </div>
@@ -351,7 +351,7 @@ function Platform() {
             <h2 className="platform-name" id="platform-title">e‑RRHH <span>V2</span></h2>
           </div>
           <div>
-            <p className="platform-lead">Una plataforma multiempresa creada desde la experiencia real en Recursos Humanos.</p>
+            <p className="platform-lead">Una plataforma multiempresa creada desde la experiencia real en gestión de personas.</p>
             <p className="platform-copy">
               Integra procesos, información y herramientas de gestión en un único entorno. Su estructura modular permite acompañar distintas necesidades y etapas de desarrollo organizacional.
             </p>
@@ -531,7 +531,7 @@ function Contact() {
               <img src={logo} alt="E-RRHH" className="h-10 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-opacity" />
             </a>
             <p className="text-white/40 leading-relaxed text-xs max-w-xs">
-              Transformamos la gestión de personas combinando experiencia en Recursos Humanos, tecnología e Inteligencia Artificial.
+              Transformamos la gestión de personas combinando experiencia, tecnología e inteligencia artificial.
             </p>
           </div>
 
