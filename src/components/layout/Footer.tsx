@@ -9,61 +9,59 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer id="footer" className="py-12 text-white bg-dark">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <img
-                src={logo}
-                alt="Logo"
-                className="w-28 h-auto object-contain drop-shadow-[0_2px_4px_rgba(255,255,255,0.73)]"
-              />
-            </div>
-            <p className="text-white/70">
+    <footer id="footer" className="pt-12 pb-8 text-white bg-slate-900 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid md:grid-cols-4 gap-12 lg:gap-8 mb-12">
+          <div className="space-y-6 md:col-span-1">
+            <img
+              src={logo}
+              alt="Logo E-RRHH"
+              className="w-32 h-auto object-contain brightness-0 invert opacity-90"
+            />
+            <p className="text-slate-400 leading-relaxed text-sm">
               {t("footer.slogan")}
             </p>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-semibold">{t("footer.contact")}</h4>
-            <div className="space-y-2">
+          <div className="space-y-6">
+            <h4 className="font-bold text-white tracking-wide">{t("footer.contact")}</h4>
+            <div className="space-y-3">
               <a
                 href="mailto:info@e-rrhh.com.ar"
-                className="flex items-center space-x-2 text-white/70 hover:text-white transition-opacity"
+                className="flex items-center space-x-3 text-slate-400 hover:text-primary transition-colors group"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-5 h-5 text-slate-500 group-hover:text-primary" />
                 <span>info@e-rrhh.com.ar</span>
               </a>
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-semibold">{t("footer.follow")}</h4>
+          <div className="space-y-6">
+            <h4 className="font-bold text-white tracking-wide">{t("footer.follow")}</h4>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/profile.php?id=100082877210053" target="_blank" rel="noopener noreferrer">
-                <Facebook className="w-5 h-5 text-white/70 hover:text-white cursor-pointer transition-opacity" />
+              <a href="https://www.facebook.com/profile.php?id=100082877210053" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                <Facebook className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com/errhh.consultora" target="_blank" rel="noopener noreferrer">
-                <Instagram className="w-5 h-5 text-white/70 hover:text-white cursor-pointer transition-opacity" />
+              <a href="https://www.instagram.com/errhh.consultora" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://www.linkedin.com/company/e-rrhh-consultora/?viewAsMember=true" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-5 h-5 text-white/70 hover:text-white cursor-pointer transition-opacity" />
+              <a href="https://www.linkedin.com/company/e-rrhh-consultora/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                <Linkedin className="w-6 h-6" />
               </a>
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-semibold">{t("footer.legal")}</h4>
-            <div className="space-y-2">
-              <button onClick={() => setModalType("legal")} className="text-white/70 hover:text-white transition-opacity block text-left">{t("footer.legal_notice")}</button>
-              <button onClick={() => setModalType("privacy")} className="text-white/70 hover:text-white transition-opacity block text-left">{t("footer.privacy")}</button>
-              <button onClick={() => setModalType("terms")} className="text-white/70 hover:text-white transition-opacity block text-left">{t("footer.terms")}</button>
+          <div className="space-y-6">
+            <h4 className="font-bold text-white tracking-wide">{t("footer.legal")}</h4>
+            <div className="flex flex-col space-y-3 text-sm">
+              <button onClick={() => setModalType("legal")} className="text-slate-400 hover:text-white transition-colors text-left w-fit">{t("footer.legal_notice")}</button>
+              <button onClick={() => setModalType("privacy")} className="text-slate-400 hover:text-white transition-colors text-left w-fit">{t("footer.privacy")}</button>
+              <button onClick={() => setModalType("terms")} className="text-slate-400 hover:text-white transition-colors text-left w-fit">{t("footer.terms")}</button>
             </div>
           </div>
         </div>
 
-        <div className="border-t mt-8 pt-8 text-center text-white/70 border-white/20">
+        <div className="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
           <p>{t("footer.rights")}</p>
         </div>
       </div>

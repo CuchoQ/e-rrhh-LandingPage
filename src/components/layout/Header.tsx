@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="border-b border-gray-100 bg-white/90 backdrop-blur-xl sticky top-0 z-50 shadow-lg shadow-gray-900/5">
-      <div className="container mx-auto px-5 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <div className="relative">
             <img src={logo} alt="Logo" className="w-28 h-auto object-contain" />
@@ -104,7 +104,7 @@ export default function Header() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-dark/10 shadow-xl">
-          <div className="container mx-auto px-6 py-4 space-y-1">
+          <div className="max-w-7xl mx-auto px-6 py-4 space-y-1">
             <a
               href="#features"
               className="block px-4 py-3 rounded-lg transition-all duration-300 text-dark hover:text-primary hover:bg-lightgray"

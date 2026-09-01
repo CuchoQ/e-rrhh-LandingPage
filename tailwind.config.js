@@ -5,10 +5,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#00A4D6",
-        dark: "#1C2942",
-        lightgray: "#F5F5F5"
-      }
+        navy: {
+          DEFAULT: "#102a47",
+          2: "#183a59",
+        },
+        blue: "#1599c4",
+        cyan: "#55d4e6",
+        text: "#18324b",
+        muted: "#657b8e",
+        page: "#f7fcfe",
+        line: "rgba(16, 42, 71, .11)",
+      },
+      fontFamily: {
+        sans: ["Inter", "Segoe UI", "Arial", "sans-serif"],
+      },
     },
   },
   plugins: [],
