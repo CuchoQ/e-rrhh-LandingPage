@@ -10,7 +10,9 @@ function Header() {
   const { t, i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'es' ? 'en' : 'es';
+    const langs = ['es', 'en', 'pt'];
+    const currentIndex = langs.indexOf(i18n.language || 'es');
+    const newLang = langs[(currentIndex + 1) % langs.length];
     i18n.changeLanguage(newLang);
   };
 
@@ -52,11 +54,11 @@ function Header() {
 
       <button 
         onClick={toggleLanguage} 
-        className="fixed top-6 right-6 z-50 flex items-center gap-1 text-[10px] font-bold text-navy hover:text-cyan transition-colors bg-white/70 backdrop-blur-md px-2 py-1.5 rounded-full border border-blue/20 shadow-sm"
+        className="fixed top-6 right-6 z-50 flex items-center gap-1 text-[10px] font-bold text-navy hover:text-cyan transition-colors bg-white/70 backdrop-blur-md px-2 py-1.5 rounded-full border border-blue/20 shadow-sm uppercase"
         aria-label="Toggle language"
       >
         <Globe className="w-3 h-3" />
-        <span>{i18n.language === 'es' ? 'EN' : 'ES'}</span>
+        <span>{i18n.language || 'es'}</span>
       </button>
     </header>
   );
