@@ -1,166 +1,151 @@
 {
-  "header": {
-    "subtitle": "IT & HR Solutions",
-    "nav_solutions": "Solutions",
-    "nav_hr": "Consulting",
-    "nav_digital": "Technology",
-    "nav_why_us": "About Us",
-    "nav_contact": "Contact"
+  "nav": {
+    "whoWeAre": "About Us",
+    "peopleManagement": "People Management",
+    "technology": "Technology",
+    "platform": "e-HR V2",
+    "contact": "Contact"
   },
   "hero": {
-    "title": "We empower people management with experience and technology",
-    "subtitle": "Specialized consulting, digital solutions, and more than 25 years of experience to professionalize and transform Human Resources management in your company.",
-    "btn_services": "Discover our services",
-    "btn_meeting": "Request a meeting",
-    "img_alt": "Team working with technology"
+    "title1": "People Management",
+    "title2": "+ Technology",
+    "lead": "We transform people management by combining HR expertise, cutting-edge technology, and artificial intelligence.",
+    "desc": "We assess, organize, and optimize HR processes. When the organization requires it, we incorporate our own technology to digitize, automate, and integrate HR management.",
+    "ctaPrimary": "Discover our solutions",
+    "ctaSecondary": "Let's talk",
+    "vision": "Our Vision",
+    "people": "People",
+    "leadVerb": "Lead",
+    "tech": "Technology",
+    "empowerVerb": "Empowers",
+    "floating1": "People",
+    "floating2": "Technology",
+    "floating3": "Artificial Intelligence",
+    "footer1": "Assessment",
+    "footer2": "Processes",
+    "footer3": "Technology",
+    "footer4": "Evolution"
   },
-  "features": {
-    "title": "Comprehensive solutions for people management",
-    "subtitle": "We combine professional experience and technology to support each company according to its needs.",
-    "items": {
-      "consulting": {
-        "title": "Human Resources Consulting",
-        "desc": "Specialized advice to professionalize processes, resolve labor issues, and improve people management."
-      },
-      "digital": {
-        "title": "Digital Solutions",
-        "desc": "Technological tools designed to automate processes, centralize information, and facilitate decision-making."
-      }
-    }
+  "identity": {
+    "kicker": "About Us",
+    "title1": "HR Expertise.",
+    "title2": "Capacity to transform.",
+    "intro1": "We are an",
+    "introStrong": "HR consulting firm specializing in people management",
+    "intro2": ", with 25 years of experience in industrial, FMCG, and SME sectors. Our in-house IT team allows us to integrate technology when it adds value to our solutions.",
+    "pillar1Title": "People Management",
+    "pillar1Desc": "We understand the organization, its people, and its processes. We assess, design, and implement HR solutions with professional criteria and close partnership.",
+    "tagDiag": "Assessment",
+    "tagStrat": "Strategy",
+    "tagProc": "Processes",
+    "tagPeople": "People",
+    "pillar2Title": "Technology",
+    "pillar2Desc": "We convert processes into digital solutions. Our IT team automates workflows, integrates information, and develops custom HR tools.",
+    "tagDig": "Digitization",
+    "tagAuto": "Automation",
+    "tagInt": "Integrations",
+    "tagAI": "Artificial Intelligence",
+    "statement1": "A comprehensive approach:",
+    "statement2": " almost 30 years of HR expertise + proprietary technological capabilities."
   },
-  "hr_consulting": {
-    "title": "Human Resources Consulting",
-    "subtitle": "We accompany organizations in diagnosing, planning, and implementing strategies to professionalize people management.",
-    "items": {
-      "diagnosis": {
-        "title": "Organizational diagnosis",
-        "desc": "Comprehensive analysis of processes, structure, culture, climate, competencies, and management needs."
-      },
-      "planning": {
-        "title": "Strategic Human Resources planning",
-        "desc": "Definition of objectives, policies, indicators, and action plans aligned with the company's strategy."
-      },
-      "development": {
-        "title": "Organizational development",
-        "desc": "Training, performance, leadership, motivation, internal communication, and team development."
-      },
-      "processes": {
-        "title": "Processes and continuous improvement",
-        "desc": "Design, documentation, and optimization of processes, profiles, procedures, and systems linked to quality standards."
-      }
-    }
+  "hr": {
+    "kicker": "People Management",
+    "title1": "Organize, professionalize, and",
+    "title2": "evolve HR management.",
+    "copy": "We intervene in people management processes in a comprehensive or targeted manner, tailored to the reality and needs of each organization.",
+    "card1Title": "Assessment & Strategy",
+    "card1L1": "Organizational & HR Assessment",
+    "card1L2": "Strategic HR Planning",
+    "card1L3": "Organizational Design & Structures",
+    "card1L4": "HR Metrics & Dashboards",
+    "card2Title": "Organization & Processes",
+    "card2L1": "HR Professionalization",
+    "card2L2": "HR Policies & Procedures",
+    "card2L3": "Personnel Administration",
+    "card2L4": "Compensation & Benefits",
+    "card3Title": "People & Culture",
+    "card3L1": "Culture & Change Management",
+    "card3L2": "Workplace Climate & Communication",
+    "card3L3": "Talent Acquisition & L&D",
+    "card3L4": "Talent & Performance Management",
+    "card4Title": "Labor Relations",
+    "card4L1": "Labor Relations Management",
+    "card4L2": "Regulatory Compliance",
+    "card4L3": "Conflict Prevention & Resolution",
+    "card4L4": "Labor Counseling"
   },
-  "how_it_works": {
-    "title": "How does it work?",
-    "subtitle": "Discover how you can transform your people management from day one",
-    "deployment_title": "Deployment Models",
-    "deployment": {
-      "local": {
-        "title": "🖥️ Local",
-        "desc": "Installation on client servers. Internal operation without cloud storage.",
-        "note": "🔗 SaaS Bridge: Services requiring feedback can operate from our cloud without storing information"
-      },
-      "self_hosted": {
-        "title": "☁️ Self-Hosted",
-        "desc": "Cloud installation under client control. Roles and users managed internally.",
-        "note": "All services run in the cloud."
-      },
-      "saas": {
-        "title": "🌐 Public SaaS",
-        "desc": "Immediate access in a shared model. We take care of maintenance.",
-        "note": "All services are available from the start, without additional configuration."
-      }
-    },
-    "implementation_title": "Implementation and Setup",
-    "implementation": {
-      "step1": {
-        "title": "Connect your company",
-        "desc": "We handle the implementation, data migration, and integration with your current systems. We are with you from the start."
-      },
-      "step2": {
-        "title": "Transform people management",
-        "desc": "Turn complex processes into simple solutions adapted to your company's reality. Centralize everything and manage with agility."
-      },
-      "step3": {
-        "title": "Automate and optimize your management",
-        "desc": "We activate advanced features: AI, smart alerts, process tracking, and a bot that responds at all times."
-      }
-    }
+  "technology": {
+    "kicker": "Technology + AI",
+    "title": "Technology applied to HR.",
+    "copy": "Our IT team enables us to design and implement technological solutions directly linked to the people management needs of the organization.",
+    "card1Title": "Digitize",
+    "card1Desc": "Centralize HR documents, employee files, processes, and information to facilitate access and management.",
+    "card2Title": "Automate",
+    "card2Desc": "Reduce repetitive tasks, operational errors, and administrative lead times.",
+    "card3Title": "Integrate",
+    "card3Desc": "Connect data, processes, people, and systems within a unified HR ecosystem.",
+    "card4Title": "Empower with AI",
+    "card4Desc": "Acquire and analyze information, assist in tasks, detect patterns, and generate HR metrics.",
+    "humanAiTitle1": "AI Assists.",
+    "humanAiTitle2": "People Lead.",
+    "humanAiCol1Title": "Artificial Intelligence",
+    "humanAiCol1Desc": "Organizes information, analyzes data, detects patterns, and generates insights for HR management.",
+    "humanAiCol2Title": "People",
+    "humanAiCol2Desc": "Validate information, interpret context, define strategy, and make the final decision."
   },
-  "digital_solutions": {
-    "title": "Digital Solutions",
-    "subtitle": "Centralize, automate, and measure every stage of the employee lifecycle in a single platform. Leave the operational work behind and focus on talent.",
-    "platform": {
-      "title": "Comprehensive management platform",
-      "items": [
-        "Automation of processes and repetitive tasks.",
-        "Centralization and traceability of information.",
-        "Dashboards and indicators for decision making.",
-        "Artificial intelligence applied to key processes.",
-        "Access from any device.",
-        "Integration of all Human Resources processes."
-      ]
-    },
-    "deployment": {
-      "title": "Deployment Models",
-      "items": {
-        "local": {
-          "title": "Local",
-          "desc": "Installation on company servers, without external information storage."
-        },
-        "self_hosted": {
-          "title": "Self-Hosted",
-          "desc": "Implementation in a cloud managed by the client."
-        },
-        "saas": {
-          "title": "Public SaaS",
-          "desc": "Immediate access to the platform, with maintenance and updates handled by E-RRHH."
-        }
-      }
-    },
-    "implementation": {
-      "title": "Implementation and support",
-      "desc": "We handle the configuration, data migration, process adaptation, training, and launch of the solution."
-    }
+  "platform": {
+    "kicker": "Our Platform",
+    "lead": "A multi-company HR platform built from real-world people management experience.",
+    "copy": "It integrates processes, information, and HR tools in a single environment. Its modular structure adapts to different organizational needs and growth stages.",
+    "mod1Title": "Core HR & Admin",
+    "mod1Desc": "Tools for comprehensive employee file management, documentation, and the employee lifecycle.",
+    "mod1Count": "+6 Integrated Modules",
+    "mod2Title": "Organization & Talent",
+    "mod2Desc": "Advanced solutions for structure design, job profiles, and talent acquisition.",
+    "mod2Count": "+4 Integrated Modules",
+    "mod3Title": "People Development",
+    "mod3Desc": "Performance management, training, workplace climate, and internal communication.",
+    "mod3Count": "+5 Integrated Modules",
+    "mod4Title": "Payroll & Time Tracking",
+    "mod4Desc": "Time and attendance control, payroll variables, and tools to centralize payroll processing.",
+    "mod4Count": "+4 Integrated Modules",
+    "portalTitle": "Employee Service Portal",
+    "portalDesc": "Inquiries, documentation, requests, and communication in a cross-functional space.",
+    "portalLabel": "Cross-functional Layer",
+    "implTitle": "Deployment Options",
+    "tag1": "Comprehensive",
+    "tag2": "Modular",
+    "tag3": "Configurable",
+    "tag4": "Scalable"
   },
-  "why_choose_us": {
-    "title": "Why choose us?",
-    "items": {
-      "experience": {
-        "title": "Applied experience to business reality",
-        "desc": "More than 25 years accompanying labor, organizational, and people management processes."
-      },
-      "vision": {
-        "title": "Strategic and comprehensive vision",
-        "desc": "We integrate diagnosis, planning, organizational development, processes, and technology in a single proposal."
-      },
-      "adapted": {
-        "title": "Custom-tailored implementation",
-        "desc": "We adapt to your structure and processes, not the other way around."
-      },
-      "technology": {
-        "title": "Technology with professional criteria",
-        "desc": "We incorporate digital tools to automate processes, analyze information, and improve decision-making. We use artificial intelligence in specific functions when it brings greater agility, accuracy, and analysis capacity."
-      },
-      "support": {
-        "title": "Support throughout the process",
-        "desc": "We work from diagnosis and planning to implementation, monitoring, and continuous improvement."
-      }
-    }
-  },
-  "final_cta": {
-    "title": "Ready to modernize your human capital management",
-    "subtitle": "Join those who already boost their talent with smart solutions",
-    "btn_start": "Start today"
+  "contact": {
+    "kicker": "Contact",
+    "title1": "The next step is",
+    "title2": "understanding the challenge.",
+    "copy": "Let's discuss the reality of your organization. From that first exchange, we can identify needs, opportunities, and potential paths forward.",
+    "lblCompany": "Company",
+    "plCompany": "Organization Name",
+    "lblName": "Full Name",
+    "plName": "Your First and Last Name",
+    "lblRole": "Job Title",
+    "plRole": "Your Position or Role",
+    "lblEmail": "Email Address",
+    "plEmail": "you@email.com",
+    "lblMessage": "Message",
+    "plMessage": "How can we help you?",
+    "btnSubmitting": "Sending...",
+    "btnSubmit": "Send Message",
+    "msgSuccess": "Your message has been sent, we will contact you shortly!",
+    "msgError": "There was an error sending the message. Please try again."
   },
   "footer": {
-    "slogan": "Transforming people management with digital solutions",
-    "contact": "Contact",
-    "follow": "Follow us",
-    "legal": "Legal",
-    "legal_notice": "Legal Notice",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Use",
-    "rights": "© 2025 E-RRHH | IT & HR Solutions. All rights reserved."
+    "desc": "We transform people management by combining HR expertise, cutting-edge technology, and artificial intelligence.",
+    "titleContact": "Contact",
+    "loc": "San Luis, Argentina",
+    "titleSocial": "Follow Us",
+    "titleLegal": "Legal",
+    "legal1": "Legal Notice",
+    "legal2": "Privacy Policy",
+    "legal3": "Terms of Use"
   }
 }
