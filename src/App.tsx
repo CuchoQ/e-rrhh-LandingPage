@@ -55,7 +55,7 @@ function Hero() {
       <main className="container hero-content">
         <div className="copy">
           <h1>
-            Gestion de Personas
+            Gestión de Personas
             <span>+ Tecnología</span>
           </h1>
 
@@ -119,7 +119,7 @@ function Identity() {
           </div>
           <div>
             <p className="identity-intro" style={{ margin: 0 }}>
-              Somos una <strong>consultora especializada en gestion de personas</strong>, con 25 años de experiencia en industria, consumo masivo y PyMEs. Nuestro equipo IT propio permite incorporar tecnología cuando aporta valor, integrándola a nuestras soluciones.
+              Somos una <strong>consultora especializada en gestión de personas</strong>, con 25 años de experiencia en industria, consumo masivo y PyMEs. Nuestro equipo IT propio permite incorporar tecnología cuando aporta valor, integrándola a nuestras soluciones.
             </p>
           </div>
         </div>
@@ -295,7 +295,7 @@ function Technology() {
           </div>
           <div>
             <p className="section-copy" style={{ margin: 0 }}>
-              Nuestro equipo IT nos permite diseñar e implementar soluciones tecnológicas vinculadas directamente con las necesidades de gestion de personas y de la organización.
+              Nuestro equipo IT nos permite diseñar e implementar soluciones tecnológicas vinculadas directamente con las necesidades de gestión de personas y de la organización.
             </p>
           </div>
         </div>

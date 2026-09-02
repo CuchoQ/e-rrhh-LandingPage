@@ -79,9 +79,9 @@
 .copy { padding-bottom: 6px; }
 .eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 25px; color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .18em; }
 .eyebrow::before { content: ""; width: 34px; height: 3px; border-radius: 8px; background: linear-gradient(90deg, var(--blue), var(--cyan)); }
-h1 { max-width: 680px; margin: 0; color: var(--navy); font-size: clamp(55px, 6.25vw, 88px); font-weight: 800; line-height: .96; letter-spacing: -.058em; }
-h1 span { display: block; color: transparent; background: linear-gradient(90deg, var(--blue), #43cbdc); background-clip: text; -webkit-background-clip: text; }
-.lead { max-width: 650px; margin: 33px 0 0; color: var(--text); font-size: clamp(18px, 1.55vw, 21px); font-weight: 520; line-height: 1.47; }
+h1 { max-width: 680px; margin: 0; color: var(--navy); font-size: clamp(55px, 6.25vw, 88px); font-weight: 800; line-height: 1.05; letter-spacing: -.058em; }
+h1 span { display: block; color: transparent; background: linear-gradient(90deg, var(--blue), #43cbdc); background-clip: text; -webkit-background-clip: text; margin-top: 5px; }
+.lead { max-width: 650px; margin: 45px 0 0; color: var(--text); font-size: clamp(18px, 1.55vw, 21px); font-weight: 520; line-height: 1.47; }
 .description { max-width: 620px; margin: 17px 0 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
 .actions { display: flex; align-items: center; gap: 14px; margin-top: 33px; }
 .button { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding-inline: 24px; border-radius: 10px; font-size: 14px; font-weight: 750; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
