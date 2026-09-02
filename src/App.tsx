@@ -478,6 +478,31 @@ function Platform() {
 
 function Contact() {
   const [modalType, setModalType] = useState<'legal' | 'privacy' | 'terms' | null>(null);
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormStatus('submitting');
+    
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+      
+      if (response.ok) {
+        setFormStatus('success');
+        (e.target as HTMLFormElement).reset();
+        setTimeout(() => setFormStatus('idle'), 5000);
+      } else {
+        setFormStatus('error');
+      }
+    } catch (error) {
+      setFormStatus('error');
+    }
+  };
 
   return (
     <section className="contact" id="contacto" aria-labelledby="contact-title">
@@ -488,7 +513,7 @@ function Contact() {
             <h2 id="contact-title">El próximo paso es <span>entender el desafío.</span></h2>
             <p className="contact-copy">Conversemos sobre la realidad de tu organización. A partir de ese primer intercambio podremos identificar necesidades, oportunidades y posibles caminos de trabajo.</p>
           </div>
-          <form className="flex flex-col gap-4 w-full bg-white/5 p-6 md:p-8 rounded-2xl border border-white/10" action="https://api.web3forms.com/submit" method="POST">
+          <form className="flex flex-col gap-4 w-full bg-white/5 p-6 md:p-8 rounded-2xl border border-white/10" onSubmit={handleSubmit}>
             {/* OJO: Aquí debes pegar tu Access Key de Web3Forms */}
             <input type="hidden" name="access_key" value="03f1d404-9256-4439-ba53-a50d204b5fa2" />
             <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
@@ -518,10 +543,22 @@ function Contact() {
               <textarea id="message" name="Mensaje" rows={4} className="bg-white/10 border border-white/20 rounded-xl p-3.5 text-white placeholder:text-white/30 focus:outline-none focus:border-cyan focus:bg-white/15 transition-all resize-none" placeholder="¿En qué te podemos ayudar?" required></textarea>
             </div>
             
-            <button type="submit" className="contact-action w-full justify-center mt-3 border-none cursor-pointer">
-              Enviar Mensaje
+            <button type="submit" disabled={formStatus === 'submitting'} className="contact-action w-full justify-center mt-3 border-none cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed">
+              {formStatus === 'submitting' ? 'Enviando...' : 'Enviar Mensaje'}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </button>
+            
+            {formStatus === 'success' && (
+              <div className="mt-2 p-3 bg-[#1599c4]/20 border border-[#1599c4]/30 rounded-xl text-center">
+                <span className="text-[#55d4e6] text-sm font-semibold">¡Su mensaje ha sido enviado, en breve nos contactaremos!</span>
+              </div>
+            )}
+            
+            {formStatus === 'error' && (
+              <div className="mt-2 p-3 bg-red-500/20 border border-red-500/30 rounded-xl text-center">
+                <span className="text-red-300 text-sm font-semibold">Hubo un error al enviar el mensaje. Intenta de nuevo.</span>
+              </div>
+            )}
           </form>
         </div>
 
