@@ -126,6 +126,17 @@ h1 span { display: block; color: transparent; background: linear-gradient(90deg,
 
 .pillars { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: clamp(58px, 7vw, 88px); }
 .pillar { position: relative; min-height: 380px; overflow: hidden; padding: clamp(31px, 4vw, 48px); border: 1px solid rgba(16, 42, 71, .10); border-radius: 27px; }
+.pillar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(21, 153, 196, .07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21, 153, 196, .07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  border-radius: inherit;
+}
 .pillar-rrhh { color: #fff; border-color: transparent; background: radial-gradient(circle at 100% 0%, rgba(85, 212, 230, .23), transparent 37%), linear-gradient(145deg, #102a47, #173f60); box-shadow: 0 24px 60px rgba(16, 42, 71, .13); }
 .pillar-tech { color: var(--navy); background: radial-gradient(circle at 100% 0%, rgba(85, 212, 230, .24), transparent 39%), linear-gradient(145deg, #f2fbfd, #e9f7fa); }
 .pillar-number { display: inline-flex; width: 39px; height: 39px; align-items: center; justify-content: center; margin-bottom: 45px; border: 1px solid rgba(255, 255, 255, .20); border-radius: 50%; color: var(--cyan); font-size: 11px; font-weight: 800; }
@@ -200,7 +211,18 @@ h1 span { display: block; color: transparent; background: linear-gradient(90deg,
 
 .contact { position: relative; overflow: hidden; padding-block: clamp(92px, 10vw, 145px) 50px; color: #fff; background: #0c2238; }
 .contact::before { content: ""; position: absolute; top: -230px; right: -170px; width: 560px; height: 560px; border-radius: 50%; background: rgba(85, 212, 230, .12); filter: blur(25px); }
-.contact-content { position: relative; display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(55px, 9vw, 120px); align-items: end; }
+.contact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image:
+    linear-gradient(rgba(21, 153, 196, .07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21, 153, 196, .07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+.contact-content { position: relative; z-index: 2; display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(55px, 9vw, 120px); align-items: end; }
 .contact .section-kicker { color: var(--cyan); }
 .contact .section-kicker::before { background: var(--cyan); }
 .contact h2 { max-width: 760px; margin: 27px 0 0; color: #fff; font-size: clamp(43px, 5.7vw, 76px); font-weight: 780; line-height: 1.02; letter-spacing: -.052em; }
