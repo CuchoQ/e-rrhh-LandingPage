@@ -444,7 +444,7 @@ function Platform() {
           <span className="employee-portal-label">{t('platform.portalLabel')}</span>
         </div>
 
-        <div className="mt-12 bg-[#f4f9fb] rounded-3xl p-6 md:p-8 border border-blue/10">
+        <div className="mt-12 bg-[rgba(21,153,196,0.15)] rounded-3xl p-6 md:p-8 border border-blue/10">
           <div className="text-center relative z-10">
             <h3 className="text-lg md:text-xl font-bold text-navy">{t('platform.implTitle')}</h3>
           </div>

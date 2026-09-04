@@ -204,8 +204,8 @@ h1 span { display: block; color: transparent; background: linear-gradient(90deg,
 .employee-portal p { margin: 5px 0 0; color: rgba(255, 255, 255, .65); font-size: 13px; }
 .employee-portal-label { color: var(--cyan); font-size: 11px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
 .platform-options { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: center; margin-top: 46px; padding-top: 37px; border-top: 1px solid var(--line); }
-.quality-tags { display: flex; flex-wrap: wrap; gap: 9px; }
-.quality-tags span { padding: 10px 14px; border: 1px solid rgba(21, 153, 196, .15); border-radius: 999px; color: var(--text); background: rgba(21, 153, 196, .055); font-size: 11px; font-weight: 700; }
+.quality-tags { display: flex; flex-wrap: wrap; gap: 48px; }
+.quality-tags span { padding: 10px 22px; border: 1px solid rgba(21, 153, 196, .35); border-radius: 999px; color: var(--navy); background: rgba(21, 153, 196, .15); font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
 .deployment { color: var(--muted); font-size: 12px; font-weight: 650; }
 .deployment strong { color: var(--navy); }
 
